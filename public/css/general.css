@@ -1,5 +1,27 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    background-color: #ebebeb;
+    background-color:#ebebeb;
+}
+
+body h1{
+    text-transform: lowercase;
+}
+
+body h1::first-letter{
+    text-transform: uppercase ;
+}
+
+body p{
+    text-transform: lowercase;
+}
+body p::first-letter{
+    text-transform: uppercase ;
+}
+
+body li{
+    text-transform: lowercase;
+}
+body li::first-letter{
+    text-transform: uppercase ;
 }

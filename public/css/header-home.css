@@ -12,10 +12,12 @@ header input{
     background-color: white;
   background-position: 20px;
   margin-top: 20px;
+
 }
 header span{
     padding-top: 10px;
     background-color: white;
+    border-bottom: 1px;
 }
 
 

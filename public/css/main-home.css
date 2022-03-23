@@ -19,6 +19,7 @@ main section article{
     background-color: white;
     margin: 25px 25px;
     padding: 10px;
+    text-transform: capitalize;
 }
 
 .precio{

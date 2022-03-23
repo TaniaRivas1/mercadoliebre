@@ -19,6 +19,12 @@ footer section h3{
     font-size: 18px;
     font-style: none;
 }
+footer h3{
+    text-transform: lowercase;
+}
+footer h3::first-letter{
+    text-transform: uppercase;
+}
 
 footer section p{
     font-size: 12px;
