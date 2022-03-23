@@ -1,0 +1,15 @@
+.noencontrado{
+    background-color: #ebebeb;
+}
+#logo{
+    background-color: #EAC926;
+}
+#img{
+    width: 100%;
+}
+#direccion a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 30px;
+}

@@ -1,0 +1,35 @@
+main {
+    text-align: center;
+}
+
+.banner{
+    width: 100%;
+}
+
+main h1{
+    padding: 20px;
+    font-size: 24px;
+}
+
+main section{
+    margin-top: 10px;
+}
+
+main section article{
+    background-color: white;
+    margin: 25px 25px;
+    padding: 10px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descrpcion{
+    font-size: 16px;
+}

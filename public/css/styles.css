@@ -1,0 +1,9 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import './general.css';
+@import './header-home.css';
+@import './main-home.css';
+@import './footer-home.css';
+@import './notfound.css';
+
+
