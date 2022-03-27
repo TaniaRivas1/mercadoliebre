@@ -66,20 +66,19 @@ main section article img{
 }
 
 @media (min-width: 361px) {
-    main section article{
-        box-shadow: 0 0 10px rgb(100, 100, 100)
-    }
-
     .descripcion{
         font-weight: normal;
         display: block;
     }
+    main section article{
+        box-shadow: 0 0 10px rgb(100, 100, 100)
+    }
 }
 
-@media(min-width: 769px){
-    main section article img{
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-    }
+@media (min-width: 769px){
+    main section article img {
+       width: 40%;
+       display: block;
+       margin: 0 auto;
+   }
 }
