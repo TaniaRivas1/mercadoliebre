@@ -9,28 +9,25 @@ header div.img{
 }
 
 header input{
-background-color: white;
+background-color: var(--colorWhite);
   background-position: 20px;
   margin-top: 20px;
-  padding: 5px;
-
+  padding: 4px;
+  margin-left: 15px;
+  border-radius: 5%;
 }
-header span{
-    padding-top: 10px;
-    background-color: white;
-    border-bottom: 1px;
-}
-
 
 .icono{
-    font-size: 20px;
-    color: black;
+    font-size: 18px;
+    padding: 4px;
+    color: var(--colorNegro);
+    border-radius: 10%;
 }
 
 header p{
     text-align: center;
-    margin-top: 20px;
-    
+    margin-top: 5px;
+    padding: 10px;
 }
 
 .primeraParte{
@@ -45,15 +42,8 @@ header p{
     margin-top: 20px;
 }
 
-header nav ul li{
-    list-style: none;
-    
-}
-
-header nav ul li a{
-    text-decoration: none;
-
-    color: black;
+header nav{
+    display: none;
 }
 
 .burguer{
@@ -64,7 +54,31 @@ header nav ul li a{
     
 }
 .burguer a{
-    background-color:#1259c3;
-    padding: 10%;
-    color: white;
+    background-color:var(--colorCeleste);
+    padding: 10px;
+    border-radius: 10%;
+    color: var(--colorWhite);
+}
+
+@media(min-width: 361px){
+    
+    header nav{
+        display: block;
+    }
+    
+    header nav ul li{
+        list-style: none;
+        
+    }
+    
+    header nav ul li a{
+        text-decoration: none;
+    
+        color: var(--colorNegro);
+    }
+
+    .burguer{
+        display:none
+
+    }
 }

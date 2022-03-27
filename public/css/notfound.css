@@ -1,5 +1,5 @@
 .noencontrado{
-    background-color: #666;
+    background-color: var(--colorGrisOscuro);
 }
 #logo{
     background-color: #EAC926;
@@ -8,7 +8,7 @@
     width: 100%;
 }
 #direccion a{
-    color: black;
+    color: var(--colorNegro);
     font-size: 20px;
     text-decoration: none;
     padding: 30px;

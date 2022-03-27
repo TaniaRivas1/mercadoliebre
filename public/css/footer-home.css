@@ -1,5 +1,5 @@
 footer{
-   background-color: white;
+   background-color: var(--colorWhite);
     padding: 30px;
     margin: 10px 10px;
 
@@ -11,7 +11,7 @@ footer section{
 }
 
 footer section a{
-    color: #1259c3;
+    color: var(--colorCeleste);
     font-size: 30px;
 }
 
@@ -28,5 +28,5 @@ footer h3::first-letter{
 
 footer section p{
     font-size: 12px;
-    color: #666;
+    color: var(--colorGrisOscuro);
 }
