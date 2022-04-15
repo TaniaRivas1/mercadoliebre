@@ -2,32 +2,54 @@ header{
     background-color: #EAC926;
     font-size: 12px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-header div.img{
-    padding: 20px;;
+.header-flexbox{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
 }
 
-header input{
-background-color: var(--colorWhite);
-  background-position: 20px;
-  margin-top: 20px;
-  padding: 4px;
-  margin-left: 15px;
-  border-radius: 5%;
+.flex-img{
+    width: 40vw;
+    padding: 20px;
+    display: flex;
 }
 
-.icono{
-    font-size: 18px;
-    padding: 4px;
-    color: var(--colorNegro);
-    border-radius: 10%;
+.header-buscador{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-buscador .input {
+    height: 25px;
+    padding: 15px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+
+.header-buscador .icono {
+    width: 20px;
+    height: 20px;
+    transform: translateX(-30px);
 }
 
 header p{
     text-align: center;
     margin-top: 5px;
     padding: 10px;
+    width: 50vw;
 }
 
 .primeraParte{
@@ -60,20 +82,45 @@ header nav{
     color: var(--colorWhite);
 }
 
-@media(min-width: 361px){
-    
-    header nav{
-        display: block;
+@media(min-width: 768px){
+
+    .flex-img{
+        width: 30%;
+    }
+
+    .header-buscador{
+        width: 30%;
+    }
+
+    .header-flexbox p{
+        width: 30%;
     }
     
-    header nav ul li{
+    header nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+    }
+
+    .primeraParte{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 40vw;
         list-style: none;
-        
+    }
+
+    .segundaParte{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 40vw;
+        list-style: none;
     }
     
     header nav ul li a{
         text-decoration: none;
-    
         color: var(--colorNegro);
     }
 
