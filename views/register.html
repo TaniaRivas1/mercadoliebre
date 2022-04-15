@@ -51,9 +51,127 @@
             <a href=""><i class="fas fa-bars"></i></a>
         </div>
     </header>
-    <main>
-
+    <main class="main-register">
+        <section class="register-box">
+            <h2>Registrarme</h2>
+            <article class="register-form">
+              <form action="" class="register-form-info">
+                <div class="register-info">
+                  <input type="text" id="nombre" name="nombre" placeholder="nombre y apellido" minlength="6" required>
+                  <label for="nombre"></label>
+                </div>
+                <div class="register-info">
+                  <input type="text" id="usuario" name="usuario" placeholder="nombre de usuario" minlength="6" required>
+                  <label for="usuario"></label>
+                </div>
+                <div class="register-info">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="email"></label>
+                  </div>
+                  <div class="register-info">
+                    <input type="date" name="fecha" min="1930-01-01" max="2021-12-31" placeholder="Fecha de nacimiento">
+                    <label for="fecha"></label>
+                  </div>
+                  <div class="register-info">
+                    <input type="text" id="domicilio" name="domicilio" placeholder="domicilio">
+                    <label for="domicilio"></label>
+                  </div>
+                <div>
+                    <input type="radio" name="compradores-vendedores" id="compradores" value="comprador">
+                    <label for="comprador">Comprador</label>
+                    <input type="radio" name="compradores-vendedores" value="vendedor" id="vendedores">
+                    <label for="vendedores">Vendedor</label>
+                </div>
+                <div class="register-intereses">
+                <p>Intereses</p>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="preferecias" id="Electro" value="E">
+                    <label for="Electro">Electro</label>
+                  </li>
+      
+      
+                  <li>
+                    <input type="checkbox" name="preferecias" id="Moda" value="M">
+                    <label for="Moda">Moda</label>
+                  </li>
+      
+      
+                  <li>
+                    <input type="checkbox" name="preferecias" id="Hogar" value="H">
+                    <label for="Hogar">Hogar</label>
+                  </li>
+      
+      
+                  <li>
+                    <input type="checkbox" name="preferecias" id="Jugueteria" value="J">
+                    <label for="Jugueteria">Jugueteria</label>
+                  </li>
+      
+      
+                  <li> 
+                    <input type="checkbox" name="preferecias" id="Vida-Sana" value="V">
+                    <label for="Vida-Sana">Vida Sana</label>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                  <label for="img">Foto de Usuario</label>
+                  <input type="file" name="imagenDePerfil" value="image" id="img" accept=".jpg, .png" >
+              </div>
+              <div class="register-contraseña">
+                <input type="password" class="input" placeholder="Contraseña" data-lpignore="true" minlength="8" required>
+              
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon password" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+              </div>
+              <div class="register-contraseña">
+                <input type="password" class="input password" placeholder="Confirmar contraseña" data-lpignore="true"  minlength="8" required>
+              
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon password" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+              </div>
+                <div class="register-boton-box">
+                  <a href="/"><button class="register-button" type="submit">Enviar</button></a>
+                  <a href="/register"><button class="register-button" type="reset">Borrar</button></a>
+                </div>
+              </form>
+            </article>
+          </section>
     </main>
+    <footer>
+        <section>
+            <a href=""><i class="fa-solid fa-credit-card"></i></a>
+            <h3> pagá con tarjeta o en efectivo</h3>
+            <p>
+                con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!
+            </p>
+        </section>
+        <section>
+            <a href=""><i class="fa-solid fa-gift"></i></a>
+            <h3> envío gratis desde $ 2.500</h3>
+            <p>
+                solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un
+                beneficio
+                de Mercado Puntos.
+            </p>
+        </section>
+        <section>
+            <a href=""><i class="fa-solid fa-user-shield"></i></a>
+            <h3>seguridad, de principio a fin</h3>
+            <p>
+                ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+        </section>
+        <section>
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>
 </body>
 
 </html>
