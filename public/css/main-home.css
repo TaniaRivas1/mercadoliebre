@@ -1,84 +1,119 @@
 .banner{
     width: 100%;
 }
-
-main section{
+.main-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 90%;
-    margin-top: 10px;
-    padding: 10px;
-
+    margin-left: 10px;
 }
 
-main section h1{
+.main-flexbox h1{
     margin-left: 30px;
     text-align: left;
     font-size: 20px;
     color: var(--colorGrisOscuro);
-    
 }
 
-main section article{
+.articulos-flexbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--colorWhite);
     margin: 25px 25px;
     padding: 10px;
     text-transform: capitalize;
+    box-shadow:0px 0px 10px rgb(100, 100, 100);
 }
 
-main section article img{
+.articulos-flexbox img{
     margin-top: 10px;
     font-size: 10px;
-    width: 100%;
     margin: 0 auto;
-    
+    width: 70%;
 }
 
 .box{
     border-top: 1px solid var(--colorGris);
-    padding: 15px;
 }
 
 .carrito{
-    width: 100%;
-    height: 100%;
-    margin: 10px auto 20px;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    justify-items: flex-start;
+    position: relative;
+    margin-bottom: 20px;
 }
 
-.carrito a{
+.carrito i{
+    display: block;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: -15px;
     color: var(--colorVerde);
     border-radius: 50%;
     border: solid 1px;
-    padding: 15px;
+    padding: 7px;
 }
-
 .precio{
-    font-size: 18px;
-    display: block;
+    font-size: 16px;
+    width: 30%;
+    display: inline;
+    margin-top: 10px;
 }
 
 .descuento{
     font-size: 16px;
     color: var(--colorVerde);
+    width: 60%;
+    display: inline;
+    margin: 10px;
+    margin-top: 10px;
 }
 
 .descripcion{
-    display: none;
+    margin-top: 10px;
+    font-weight: normal;
+    display: block;
 }
 
-@media (min-width: 361px) {
-    .descripcion{
-        font-weight: normal;
-        display: block;
-    }
-    main section article{
-        box-shadow: 0 0 10px rgb(100, 100, 100)
+@media (min-width: 480px) {
+    .articulos-flexbox img{
+        width: 60%;
     }
 }
 
-@media (min-width: 769px){
-    main section article img {
-       width: 40%;
-       display: block;
-       margin: 0 auto;
-   }
+@media (min-width: 768px){
+    .main-flexbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .main-flexbox h1{
+        width: 100%;
+    }
+
+    .articulos-flexbox{
+        width: 40%;
+    }
+
+
+}
+
+@media (min-width: 1024px){
+    .articulos-flexbox img{
+        width: 80%;
+    }
+    .articulos-flexbox{
+        width: 20%;
+    }
 }
