@@ -52,25 +52,27 @@
         </div>
     </header>
 
-    <main>
-        <section>
+    <main class="main-login">
+        <section class="login-box">
             <h2>Iniciar Sesion</h2>
-            <article>
-                <div class="register-info">
-                    <input type="text" id="usuario" name="usuario" placeholder="nombre de usuario" minlength="6" required>
+            <article class="login-form">
+                <form action="" class="login-form-info">
+                <div class="login-info">
+                    <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" minlength="6" required>
                     <label for="usuario"></label>
                   </div>
-                  <div class="register-contraseña">
-                    <input type="password" class="input" placeholder="Contraseña" data-lpignore="true" minlength="8" required>
+                  <div class="login-contraseña">
+                    <input type="password" class="login-input" placeholder="Contraseña" data-lpignore="true" minlength="8" required>
                   
-                    <svg xmlns="http://www.w3.org/2000/svg" class="input-icon password" viewBox="0 0 20 20" fill="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="login-input-icon" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                     <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
                   </svg>
                   </div>
-                  <div class="register-boton-box">
-                    <a href="/"><button class="register-button" type="submit">Enviar</button></a>
+                  <div class="login-boton-box">
+                    <a href="/"><button class="login-button" type="submit">Enviar</button></a>
                 </div>
+            </form>
             </article>
         </section>
     </main> 
