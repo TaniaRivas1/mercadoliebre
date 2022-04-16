@@ -57,11 +57,11 @@
             <article class="register-form">
               <form action="" class="register-form-info">
                 <div class="register-info">
-                  <input type="text" id="nombre" name="nombre" placeholder="nombre y apellido" minlength="6" required>
+                  <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" minlength="6" required>
                   <label for="nombre"></label>
                 </div>
                 <div class="register-info">
-                  <input type="text" id="usuario" name="usuario" placeholder="nombre de usuario" minlength="6" required>
+                  <input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario" minlength="6" required>
                   <label for="usuario"></label>
                 </div>
                 <div class="register-info">
@@ -73,18 +73,23 @@
                     <label for="fecha"></label>
                   </div>
                   <div class="register-info">
-                    <input type="text" id="domicilio" name="domicilio" placeholder="domicilio">
+                    <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
                     <label for="domicilio"></label>
                   </div>
-                <div>
-                    <input type="radio" name="compradores-vendedores" id="compradores" value="comprador">
-                    <label for="comprador">Comprador</label>
-                    <input type="radio" name="compradores-vendedores" value="vendedor" id="vendedores">
-                    <label for="vendedores">Vendedor</label>
+                <div class="register-perfil">
+                    <p>Perfil del Usuario</p>
+                    <div class="register-perfil-user">
+                        <input type="radio" name="compradores-vendedores" id="compradores" value="comprador">
+                        <label for="comprador">Comprador</label>
+                    </div>
+                    <div class="register-perfil-user">
+                        <input type="radio" name="compradores-vendedores" value="vendedor" id="vendedores">
+                        <label for="vendedores">Vendedor</label>
+                    </div>
                 </div>
                 <div class="register-intereses">
                 <p>Intereses</p>
-                <ul>
+                <ul class="register-intereses-box">
                   <li>
                     <input type="checkbox" name="preferecias" id="Electro" value="E">
                     <label for="Electro">Electro</label>
@@ -115,22 +120,22 @@
                   </li>
                 </ul>
               </div>
-              <div>
+              <div class="register-foto">
                   <label for="img">Foto de Usuario</label>
                   <input type="file" name="imagenDePerfil" value="image" id="img" accept=".jpg, .png" >
               </div>
               <div class="register-contraseña">
-                <input type="password" class="input" placeholder="Contraseña" data-lpignore="true" minlength="8" required>
+                <input type="password" class="register-input" placeholder="Contraseña" data-lpignore="true" minlength="8" required>
               
-                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon password" viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                 <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
               </svg>
               </div>
               <div class="register-contraseña">
-                <input type="password" class="input password" placeholder="Confirmar contraseña" data-lpignore="true"  minlength="8" required>
+                <input type="password" class="register-input" placeholder="Confirmar contraseña" data-lpignore="true"  minlength="8" required>
               
-                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon password" viewBox="0 0 20 20" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="input-icon" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                 <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
               </svg>

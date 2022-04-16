@@ -38,7 +38,7 @@
     border-top: 1px solid var(--colorGris);
 }
 
-.carrito{
+.camion{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -47,7 +47,7 @@
     margin-bottom: 20px;
 }
 
-.carrito i{
+.camion i{
     display: block;
     width: 35px;
     height: 35px;
