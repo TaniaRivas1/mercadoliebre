@@ -10,6 +10,7 @@
 }
 .input:focus{
     -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     outline: none;
     border-bottom: none;
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #EAC926 4%);
