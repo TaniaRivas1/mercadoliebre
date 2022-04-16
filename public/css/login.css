@@ -25,9 +25,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    border-radius: 5px;
 }
-
 .login-info input{
     padding: 15px 15px 15px 35px;
 }
@@ -36,13 +34,11 @@
     padding: 10px;
     position: relative;
     width: 100%;
-    border-radius: 5px;
 }
-
-.login-input {
+.login-input{
     padding: 15px 15px 15px 35px;
+    width: 100%;
 }
-
 .login-input-icon{
     display: flex;
     position: absolute;
@@ -61,12 +57,17 @@
     justify-content: center;
     padding: 10px;
 }
-
 .login-button{
-    background-color: var(--colorCeleste);
-    color: var(--colorWhite);
-    padding: 10px;
-    width: 100%;
-    border-bottom: 1px var(--colorWhite);
-    border-radius: 5px;
+    color: var(--colorWhite) !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: var(--colorCeleste);
+    border: 2px solid;
+    transition: all 1s ease;
+    position: relative;
 }
+.login-button:hover {
+    background: #EAC926;
+    color: #fff !important;
+  }

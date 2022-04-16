@@ -34,7 +34,7 @@ header{
     align-items: center;
 }
 
-.header-buscador .input {
+.header-buscador .header-input {
     height: 25px;
     padding: 15px;
     width: 100%;

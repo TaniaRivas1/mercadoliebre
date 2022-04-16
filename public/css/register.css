@@ -2,10 +2,19 @@
     width: 100%;
 }
 
-input:focus{
-    background-color: #EAC926;
-    
+
+.input {
+    border: none;
+    border-bottom: 1px solid #318aac;
+    width: 100%;
 }
+.input:focus{
+    -webkit-transition: all 0.3s ease-in-out;
+    outline: none;
+    border-bottom: none;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #EAC926 4%);
+}
+
 
 .register-box{
     display: flex;
@@ -23,17 +32,17 @@ input:focus{
     font-weight: 400;
 }
 
+
 .register-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 5px;
-    border-radius: 5px;
 }
-
 .register-info input{
     padding: 15px 15px 15px 35px;
 }
+
 
 .register-perfil{
     display: flex;
@@ -49,7 +58,7 @@ input:focus{
 .register-perfil p{
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: start;
     text-transform: capitalize;
     font-size: 20px;
     margin-bottom: 10px;
@@ -59,6 +68,7 @@ input:focus{
     display: flex;
     justify-content: space-evenly;
 }
+
 
 .register-intereses{
     display: flex;
@@ -80,25 +90,31 @@ input:focus{
     margin-bottom: 10px;
 }
 
+
 .register-foto{
     display: flex;
+    flex-direction: column;
     margin: 10px;
     padding: 10px;
+    font-size: 20px;
 }
+.register-foto input{
+    margin-top: 10px;
+    border-bottom: none;
+    padding: 10px;
+}
+
 
 .register-contraseña{
     padding: 10px;
     position: relative;
     width: 100%;
-    border-radius: 5px;
-
+    margin-bottom: 10px;
 }
-
 .register-input {
     padding: 15px 15px 15px 35px;
     width: 100%;
 }
-
 .input-icon{
     display: flex;
     position: absolute;
@@ -112,6 +128,7 @@ input:focus{
     color: var(--colorGrisOscuro);
 }
 
+
 .register-boton-box{
     display: flex;
     justify-content: space-evenly;
@@ -120,9 +137,39 @@ input:focus{
     margin: 10px;
     width: 100%;
 }
-.register-button{
-    padding: 10px;
-    background-color: var(--colorCeleste);
-    color: var(-colorWhite);
-    width: 100%;
-}
+.register-button {
+    color: var(--colorWhite) !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: var(--colorCeleste);
+    border: 2px solid;
+    transition: all 1s ease;
+    position: relative;
+  }
+  .register-button:hover {
+    background: #EAC926;
+    color: #fff !important;
+  }
+
+  @media (min-width: 768px){
+      .register-form{
+          display: flex;
+          flex-direction: row;
+          
+      }
+      .register-form-info{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+      .register-info, .register-perfil, .register-intereses, .register-foto, .register-contraseña{
+          width: 40vw;
+      }
+      .register-boton-box{
+          justify-content: space-evenly;
+          padding: 20px;
+      }
+      
+  }
