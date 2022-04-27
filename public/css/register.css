@@ -7,6 +7,7 @@
     border: none;
     border-bottom: 1px solid #318aac;
     width: 100%;
+    padding: 15px 15px 15px 35px;
 }
 .input:focus{
     -webkit-transition: all 0.3s ease-in-out;
@@ -40,10 +41,6 @@
     justify-content: center;
     padding: 5px;
 }
-.register-info input{
-    padding: 15px 15px 15px 35px;
-}
-
 
 .register-perfil{
     display: flex;
@@ -107,15 +104,12 @@
 
 
 .register-contraseña{
-    padding: 10px;
+    padding: 7px;
     position: relative;
     width: 100%;
     margin-bottom: 10px;
 }
-.register-input {
-    padding: 15px 15px 15px 35px;
-    width: 100%;
-}
+
 .input-icon{
     display: flex;
     position: absolute;

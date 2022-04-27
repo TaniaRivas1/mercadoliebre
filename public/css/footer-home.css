@@ -30,3 +30,15 @@ footer section p{
     font-size: 12px;
     color: var(--colorGrisOscuro);
 }
+
+@media (min-width: 1024px){
+    .footer-info{
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-info-info{
+        margin: 10px;
+       
+    }
+    
+}

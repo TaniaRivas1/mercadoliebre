@@ -5,9 +5,7 @@
 .login-box{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
-    width: 100%;
+    align-items:stretch;
     padding: 10px;
     margin-top: 30px;
 }
@@ -15,30 +13,29 @@
 .login-box{
     color: var(--colorNegro);
     text-transform: uppercase;
+    text-align: center;
 }
 
 .login-form-info{
+    width:100%;
     margin-top: 10px;
 }
 
 .login-info{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
-}
-.login-info input{
     padding: 15px 15px 15px 35px;
+    width: 100%;
 }
 
 .login-contraseña{
-    padding: 10px;
     position: relative;
-    width: 100%;
-}
-.login-input{
     padding: 15px 15px 15px 35px;
     width: 100%;
 }
+
 .login-input-icon{
     display: flex;
     position: absolute;
@@ -49,7 +46,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: var(--colorGrisOscuro);
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .login-boton-box{
@@ -70,4 +67,18 @@
 .login-button:hover {
     background: #EAC926;
     color: #fff !important;
+  }
+
+  @media (min-width: 768px){
+    .login-form-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+      .login-info{
+          width: 50%;
+      }
+      .login-contraseña{
+          width: 50%;
+      }
   }
