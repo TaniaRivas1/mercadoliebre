@@ -10,12 +10,17 @@ footer section{
     margin-top: 50px;
 }
 
-footer section a{
+.footer-info-info a{
     color: var(--colorCeleste);
     font-size: 30px;
 }
 
-footer section h3{
+/* puse el cambio aca porque no sabia si iba solo en destop dado que no lo aclara, igual sino despues lo cambio*/
+.footer-info-info a:hover{
+    color: #EAC926;
+}
+
+.footer-info-info h3{
     font-size: 18px;
     font-style: none;
 }
@@ -38,6 +43,6 @@ footer section p{
     }
     .footer-info-info{
         margin: 10px;
-       
     }
+    
 }
