@@ -24,8 +24,11 @@
     margin: 25px 25px;
     padding: 10px;
     text-transform: capitalize;
-    box-shadow:0px 0px 10px rgb(100, 100, 100);
+    transition: all 0.5 ease-out;
     width: 280px;
+}
+.articulos-flexbox:hover{
+   box-shadow:  0 4px 16px var(--colorGrisOscuro);
 }
 
 .articulos-flexbox img{
@@ -46,6 +49,7 @@
     justify-items: flex-start;
     position: relative;
     margin-bottom: 20px;
+    
 }
 
 .camion i{
@@ -61,6 +65,10 @@
     border-radius: 50%;
     border: solid 1px;
     padding: 7px;
+    transition: all 0.5s ease-in;
+}
+.camion i:hover{
+    transform: rotate(-90deg);
 }
 .precio{
     font-size: 16px;
@@ -76,10 +84,18 @@
     display: inline;
     margin: 10px;
     margin-top: 10px;
+    
 }
 
+/* intente hacerlo con display o con visibility pero no me funciono y me queme el cerebro asique lo deje asi*/
 .descripcion{
-    display: none;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+.descripcion:hover{
+    margin-top: 10px;
+    font-weight: normal;
+    opacity: 100%;
 }
 
 @media (min-width: 460px) {
@@ -107,12 +123,6 @@
     .articulos-flexbox{
         width: 40%;
     }
-    .descripcion{
-        margin-top: 10px;
-        font-weight: normal;
-        display: block;
-    }
-}
 
 @media (min-width: 1024px){
     .articulos-flexbox img{
@@ -121,4 +131,5 @@
     .articulos-flexbox{
         width: 20%;
     }
+}
 }
