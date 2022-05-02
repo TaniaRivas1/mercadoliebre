@@ -34,7 +34,7 @@ header{
     align-items: center;
 }
 
-.header-buscador .input {
+.header-buscador .header-input {
     height: 25px;
     padding: 15px;
     width: 100%;
@@ -78,7 +78,7 @@ header nav{
     font-size: 20px;
     width: 10%;
     margin: 0 auto;
-    
+    text-align: center;
 }
 .burguer a{
     background-color:var(--colorCeleste);

@@ -1,0 +1,170 @@
+.main-register{
+    width: 100%;
+}
+
+
+.input {
+    border: none;
+    border-bottom: 1px solid #EAC926;
+    width: 100%;
+    padding: 15px 15px 15px 35px;
+}
+.input:focus{
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    border-bottom: none;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #0022AA 4%);
+}
+
+
+.register-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    background-color: var(--colorGris);
+}
+.register-box h2{
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+
+.register-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.register-perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.register-perfil p{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.register-perfil-user{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.register-intereses{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px 10px;
+    padding: 10px;
+}
+.register-intereses p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: start;
+}
+.register-intereses-box li{
+    list-style: none;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+
+.register-foto{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.register-foto input{
+    margin-top: 10px;
+    border-bottom: none;
+    padding: 10px;
+}
+
+
+.register-contraseña{
+    padding: 7px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-icon{
+    display: flex;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: unset;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10px;
+    color: var(--colorGrisOscuro);
+}
+
+
+.register-boton-box{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+.register-button {
+    color: var(--colorWhite) !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background: var(--colorCeleste);
+    border: 2px solid;
+    transition: all 1s ease;
+    position: relative;
+  }
+  .register-button:hover {
+    background: #EAC926;
+    color: #fff !important;
+  }
+
+  @media (min-width: 768px){
+      .register-form{
+          display: flex;
+          flex-direction: row;
+          
+      }
+      .register-form-info{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+      .register-info, .register-perfil, .register-intereses, .register-foto, .register-contraseña{
+          width: 40vw;
+      }
+      .register-boton-box{
+          justify-content: space-evenly;
+          padding: 20px;
+      }
+      
+  }
